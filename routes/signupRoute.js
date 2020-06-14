@@ -6,8 +6,6 @@ const user = require('../models/User');
 const sendEmails = require('../actions/sendMails');
 const { hashPassword } = require('../actions/hash');
 
-const JWT_SECRET = 'JackSparrow-shall-not-die';
-
 signup.get('/', (req, res) => {
   res.render('signup');
 });
